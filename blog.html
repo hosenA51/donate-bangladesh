@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Tailwind & DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome CDN -->
+    <script src="https://kit.fontawesome.com/ab34ab0257.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="flex mx-auto bg-[#F9F7F3]">
+            <div class="flex mx-auto w-10/12 justify-between py-6">
+                <button class="btn bg-[#B4F461] text-xl font-bold px-8"><a href="index.html">Home</a></button>
+                <div class="flex h-12 gap-4 items-center">
+                    <img class="h-10 w-10" src="./assets/logo.png" alt="">
+                    <h5 class="text-xl font-bold">Donate Bangladesh</h5>
+                </div>
+                <div class="flex h-7 gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-dark-gray-transparent text-xl font-bold"><span id="balance"
+                            class="text-dark-gray-transparent text-xl font-bold">5500</span> BDT</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mx-auto w-10/12">
+            <div>
+                <h1 class="text-4xl font-extrabold my-14">Important FAQ <i class="fa-regular fa-circle-question"></i>
+                </h1>
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="collapse collapse-arrow border border-2">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-2xl font-semibold">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">The Document Object Model (DOM) is a programming interface that represents
+                            the structure of an HTML or XML document as a tree of objects. Each element, attribute, and
+                            piece of text is a node in this tree, allowing developers to access and manipulate content,
+                            structure, and styles using languages like JavaScript. The DOM enables dynamic updates to
+                            the document, making it possible to create interactive web applications by responding to
+                            user events, changing elements, or modifying styles without reloading the page.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border border-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-semibold">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">To select an element from the DOM (Document Object Model), you use methods
+                            provided by the browser. These methods allow you to target elements based on their tags,
+                            classes, IDs, or other attributes. For example, you can select an element by its ID, which
+                            is unique to that element, or by its class name, which might apply to multiple elements.
+                            Once selected, you can interact with or manipulate the element, such as changing its
+                            content, style, or attributes.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border border-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-semibold">What is event delegation in the context of the
+                        DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">Event delegation is a technique in the DOM where a single event listener is
+                            added to a parent element rather than to individual child elements. When an event occurs on
+                            a child element, it bubbles up to the parent, allowing the parent’s event listener to handle
+                            it. This is useful because it simplifies code, reduces memory usage, and efficiently manages
+                            dynamic elements. Instead of attaching separate listeners to each child, event delegation
+                            allows handling multiple child events centrally, making it easier to manage and update the
+                            DOM.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border border-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-semibold">How do you manipulate an element's attributes and
+                        styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">To manipulate an element’s attributes and styles using the DOM, you first
+                            select the element. Once selected, you can change its attributes (like src for an image or
+                            href for a link) by accessing and modifying them directly. For styles, you modify the
+                            element’s style property to change CSS properties, such as color, background, or display.
+                            This allows you to dynamically adjust the appearance or behavior of elements in response to
+                            user actions or other events, enhancing the interactivity and visual appeal of the webpage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-[#F9F7F3] h-24 w-full mt-20">
+            <!-- This is Footer -->
+        </div>
+    </footer>
+</body>
+
+</html>
