@@ -37,8 +37,8 @@
 
 <body class="font-Lexend">
   <!-- Header Section -->
-  <header>
-    <nav class="flex mx-auto bg-[#F9F7F3]">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/50">
+    <nav class="flex mx-auto backdrop-blur-md bg-[#F9F7F3]/50">
       <div class="flex mx-auto w-10/12 justify-between py-6">
         <button class="btn bg-[#B4F461] text-xl font-bold px-8"><a href="blog.html">Blog</a></button>
         <div class="flex h-12 gap-4 items-center">
@@ -52,12 +52,14 @@
         </div>
       </div>
     </nav>
-    <div class="flex mx-auto w-10/12 gap-4 justify-center my-10">
-      <button class="btn bg-[#B4F461] text-xl font-bold px-8">Donation</button>
-      <button class="btn bg-gray-transparent text-xl font-semibold px-8">History</button>
-    </div>
+    <section class="border-b pt-12">
+      <div class="flex mx-auto w-10/12 gap-4 justify-center mt-0 mb-10 ">
+        <button class="btn bg-[#B4F461] text-xl font-bold px-8">Donation</button>
+        <button class="btn bg-gray-transparent text-xl font-semibold px-8">History</button>
+      </div>
+    </section>
   </header>
-  <hr>
+
   <main>
     <!-- Cards section -->
     <section class="flex mx-auto flex-col w-10/12 my-12 gap-8">
@@ -69,16 +71,18 @@
         <div class="flex flex-col flex-1 h-auto justify-between p-0">
           <div class="flex gap-3 size-fit bg-gray-transparent py-3 px-4 rounded-lg">
             <img src="./assets/coin.png" alt="">
-            <p class="text-dark-gray-transparent text-lg font-semibold"><span id="donate-flood-noakhali"
+            <p class="text-dark-gray-transparent text-lg font-semibold"><span id="donation-balance-noakhali"
                 class="text-dark-gray-transparent text-lg font-semibold">00</span> BDT</p>
           </div>
           <h2 class="card-title text-xl font-bold leading-8 mt-4">Donate for Flood at Noakhali, Bangladesh</h2>
-          <p class="text-dark-gray-transparent text-[16px] leading-6 font-light mt-4 ">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+          <p class="text-dark-gray-transparent text-[16px] leading-6 font-light mt-4 ">The recent floods in Noakhali
+            have caused significant damage to homes infrastructure. Your donation will
             help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
             makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
             of those in need.</p>
-          <input type="text" name="" id="" class="p-[16px] my-4 border border-1 rounded-lg w-full" placeholder="Write Donation Amount">
-          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0" onclick= "my_modal.showModal()">Donate Now</button>
+          <input type="text" name="" id="input-flood-noakhali" class="p-[16px] my-4 border border-1 rounded-lg w-full"
+            placeholder="Write Donation Amount">
+          <button id="btn-donate-noakhali" class="btn bg-[#B4F461] text-xl font-bold w-full m-0">Donate Now</button>
         </div>
       </div>
 
@@ -90,13 +94,19 @@
         <div class="flex flex-col flex-1 h-auto justify-between p-0">
           <div class="flex gap-3 size-fit bg-gray-transparent py-3 px-4 rounded-lg">
             <img src="./assets/coin.png" alt="">
-            <p class="text-dark-gray-transparent text-lg font-semibold"><span id="donate-flood-noakhali"
+            <p class="text-dark-gray-transparent text-lg font-semibold"><span id="donation-balance-feni"
                 class="text-dark-gray-transparent text-lg font-semibold">00</span> BDT</p>
           </div>
           <h2 class="card-title text-xl font-bold leading-8 mt-3">Donate for Flood Relief in Feni,Bangladesh</h2>
-          <p class="text-dark-gray-transparent text-[16px] leading-6 font-light mt-3 ">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-          <input type="text" name="" id="" class="p-[16px] my-4 border border-1 rounded-lg w-full" placeholder="Write Donation Amount">
-          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0" onclick= "my_modal.showModal()">Donate Now</button>
+          <p class="text-dark-gray-transparent text-[16px] leading-6 font-light mt-3 ">The recent floods in Feni have
+            devastated local communities, leading to severe disruption and loss. Your generous donation will help
+            provide immediate aid, including food, clean water, and medical supplies, to those affected by this
+            calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster.
+            Every contribution counts towards making a real difference. Please consider donating today to assist those
+            in urgent need.</p>
+          <input type="text" name="" id="input-flood-feni" class="p-[16px] my-4 border border-1 rounded-lg w-full"
+            placeholder="Write Donation Amount">
+          <button id="btn-donate-feni" class="btn bg-[#B4F461] text-xl font-bold w-full m-0">Donate Now</button>
         </div>
       </div>
 
@@ -108,13 +118,19 @@
         <div class="flex flex-col flex-1 h-auto justify-between p-0">
           <div class="flex gap-3 size-fit bg-gray-transparent py-3 px-4 rounded-lg">
             <img src="./assets/coin.png" alt="">
-            <p class="text-dark-gray-transparent text-lg font-semibold"><span id="donate-flood-noakhali"
+            <p class="text-dark-gray-transparent text-lg font-semibold"><span id="donation-balance-movement"
                 class="text-dark-gray-transparent text-lg font-semibold">00</span> BDT</p>
           </div>
           <h2 class="card-title text-xl font-bold leading-8 mt-3">Aid for Injured in the Quota Movement</h2>
-          <p class="text-dark-gray-transparent text-[16px] leading-6 font-light mt-3 ">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-          <input type="text" name="" id="" class="p-[16px] my-4 border border-1 rounded-lg w-full" placeholder="Write Donation Amount">
-          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0" onclick= "my_modal.showModal()">Donate Now</button>
+          <p class="text-dark-gray-transparent text-[16px] leading-6 font-light mt-3 ">The recent Quota movement has
+            resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in
+            providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you
+            help ensure that injured individuals receive the care and support they need during this challenging time.
+            Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please
+            consider making a donation to support these brave individuals in their time of need.</p>
+          <input type="text" name="" id="input-quota-movement" class="p-[16px] my-4 border border-1 rounded-lg w-full"
+            placeholder="Write Donation Amount">
+          <button id="btn-aid-injury" class="btn bg-[#B4F461] text-xl font-bold w-full m-0">Donate Now</button>
         </div>
       </div>
     </section>
@@ -139,6 +155,7 @@
       <!-- This is Footer -->
     </div>
   </footer>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
