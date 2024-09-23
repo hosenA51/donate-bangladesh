@@ -78,7 +78,7 @@
             makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
             of those in need.</p>
           <input type="text" name="" id="" class="p-[16px] my-4 border border-1 rounded-lg w-full" placeholder="Write Donation Amount">
-          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0">Donate Now</button>
+          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0" onclick= "my_modal.showModal()">Donate Now</button>
         </div>
       </div>
 
@@ -96,7 +96,7 @@
           <h2 class="card-title text-xl font-bold leading-8 mt-3">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p class="text-dark-gray-transparent text-[16px] leading-6 font-light mt-3 ">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
           <input type="text" name="" id="" class="p-[16px] my-4 border border-1 rounded-lg w-full" placeholder="Write Donation Amount">
-          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0">Donate Now</button>
+          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0" onclick= "my_modal.showModal()">Donate Now</button>
         </div>
       </div>
 
@@ -114,10 +114,25 @@
           <h2 class="card-title text-xl font-bold leading-8 mt-3">Aid for Injured in the Quota Movement</h2>
           <p class="text-dark-gray-transparent text-[16px] leading-6 font-light mt-3 ">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
           <input type="text" name="" id="" class="p-[16px] my-4 border border-1 rounded-lg w-full" placeholder="Write Donation Amount">
-          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0">Donate Now</button>
+          <button class="btn bg-[#B4F461] text-xl font-bold w-full m-0" onclick= "my_modal.showModal()">Donate Now</button>
         </div>
       </div>
     </section>
+    <!-- modal -->
+    <dialog id="my_modal" class="modal">
+      <div class="modal-box flex flex-col justify-center items-center">
+        <h3 class="text-3xl font-bold mb-4">Congrates!</h3>
+        <img src="./assets/coin.png" alt="">
+        <p class="py-4">You Have Donated for Humankind</p>
+        <h3 class="text-lg font-bold">Successfully</h3>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">close confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
   </main>
   <footer>
     <div class="bg-[#F9F7F3] h-24 w-full mt-20">
