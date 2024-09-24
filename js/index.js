@@ -125,4 +125,4 @@ donationTab.addEventListener('click', function(){
 
     document.getElementById('donation-cards').classList.remove('hidden');
     document.getElementById('history-list').classList.add('hidden');
-})
+});
