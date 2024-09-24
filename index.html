@@ -43,7 +43,7 @@
         <button class="btn bg-[#B4F461] text-xl font-bold px-8"><a href="blog.html">Blog</a></button>
         <div class="flex h-12 gap-4 items-center">
           <img class="h-10 w-10" src="./assets/logo.png" alt="">
-          <h5 class="text-xl font-bold">Donate Bangladesh</h5>
+          <h5 class="text-2xl font-bold">Donate Bangladesh</h5>
         </div>
         <div class="flex h-7 gap-3">
           <img src="./assets/coin.png" alt="">
@@ -54,15 +54,15 @@
     </nav>
     <section class="border-b pt-12">
       <div class="flex mx-auto w-10/12 gap-4 justify-center mt-0 mb-10 ">
-        <button class="btn bg-[#B4F461] text-xl font-bold px-8">Donation</button>
-        <button class="btn bg-gray-transparent text-xl font-semibold px-8">History</button>
+        <button id="donation-tab" class="btn bg-[#B4F461] text-xl font-bold px-8">Donation</button>
+        <button id="history-tab" class="btn bg-gray-transparent text-xl font-bold px-8">History</button>
       </div>
     </section>
   </header>
 
   <main>
     <!-- Cards section -->
-    <section class="flex mx-auto flex-col w-10/12 my-12 gap-8">
+    <section id="donation-cards" class="flex mx-auto flex-col w-10/12 my-12 gap-8">
       <!-- Card one -->
       <div class="card lg:card-side gap-7 bg-base-100 shadow-xl border rounded-2xl p-8">
         <div class="flex-1 h-full">
@@ -149,6 +149,10 @@
         </div>
       </div>
     </dialog>
+    <!-- History Section -->
+    <div id="history-list" class="hidden">
+
+    </div>
   </main>
   <footer>
     <div class="bg-[#F9F7F3] h-24 w-full mt-20">
